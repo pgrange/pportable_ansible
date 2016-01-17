@@ -1,2 +1,6 @@
 - name: restart systemd-logind.service
   service: name=systemd-logind.service state=restarted
+
+- name: rmmod pcspkr
+  command: rmmod pcspkr
+  ignore_errors: yes

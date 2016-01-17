@@ -29,6 +29,7 @@
   template: src={{ item }} dest=/{{ item }}
   with_items:
     - etc/modprobe.d/no_bip.conf
+  notify: rmmod pcspkr
 
 - name: parano... hibernation lors de la fermeture ecran
   ini_file: dest=/etc/systemd/logind.conf section=Login option=HandleLidSwitch value=hibernate
