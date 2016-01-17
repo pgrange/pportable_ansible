@@ -12,6 +12,10 @@
     - unattended-upgrades
     - apt-transport-https
     - tree
+    - vim
+
+- name: editeur par defaut correct...
+  alternatives: name=editor path=/usr/bin/vim.tiny
 
 - name: ajout de l'utilisateur dans les groupes appropries
   user: name=pascal append=yes groups=sudo
