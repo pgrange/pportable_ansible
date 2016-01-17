@@ -4,6 +4,7 @@
     - i3
     - xinit
     - nodm
+    - parcellite
 
 - name: enable nodm
   lineinfile: dest=/etc/default/nodm regexp="^NODM_ENABLED=.*$" line="NODM_ENABLED=true"
