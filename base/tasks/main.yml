@@ -9,8 +9,14 @@
     - sudo
     - bash-completion
     - network-manager
+    - unattended-upgrades
     - apt-transport-https
     - vim
 
-- name: add user to appropriate groups
+- name: ajout de l'utilisateur dans les groupes appropries
   user: name=pascal append=yes groups=sudo
+
+- name: unattended-upgrades tous les jours
+  template: src={{ item }} dest=/{{ item }}
+  with_items:
+    - etc/apt/apt.conf.d/20auto-upgrades
