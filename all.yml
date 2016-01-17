@@ -3,4 +3,5 @@
   roles:
     - base
     - x11
+    - tools
     - docker

@@ -4,3 +4,5 @@
     - xterm
     - chromium
     - vim
+    - lftp
+    - dstat
