@@ -1,0 +1,16 @@
+- name: suppression paquets inutiles
+  apt: state=absent purge=yes name={{ item }}
+  with_items:
+    - avahi-autoipd
+
+- name: installation paquets basiques
+  apt: state=present name={{ item }}
+  with_items:
+    - sudo
+    - bash-completion
+    - network-manager
+    - apt-transport-https
+    - vim
+
+- name: add user to appropriate groups
+  user: name=pascal append=yes groups=sudo

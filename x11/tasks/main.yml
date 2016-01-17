@@ -1,0 +1,14 @@
+- name: installation des paquets x11 "cool"
+  apt: state=present name={{ item }}
+  with_items:
+    - i3
+    - xinit
+    - nodm
+
+- name: enable nodm
+  lineinfile: dest=/etc/default/nodm regexp="^NODM_ENABLED=.*$" line="NODM_ENABLED=true"
+
+- name: set nodm user
+  lineinfile: dest=/etc/default/nodm regexp="^NODM_USER=.*$" line="NODM_USER=pascal"
+
+- service: name=nodm enabled=yes

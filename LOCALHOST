@@ -1,0 +1,2 @@
+[risno]
+localhost ansible_connection=local
