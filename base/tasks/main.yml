@@ -11,7 +11,6 @@
     - network-manager
     - unattended-upgrades
     - apt-transport-https
-    - vim
     - tree
 
 - name: ajout de l'utilisateur dans les groupes appropries

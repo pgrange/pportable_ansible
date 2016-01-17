@@ -1,0 +1,6 @@
+- name: outils utilisateurs
+  apt: name={{ item }}
+  with_items:
+    - xterm
+    - chromium
+    - vim
