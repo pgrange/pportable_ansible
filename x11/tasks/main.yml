@@ -5,6 +5,7 @@
     - xinit
     - nodm
     - parcellite
+    - arandr
 
 - name: enable nodm
   lineinfile: dest=/etc/default/nodm regexp="^NODM_ENABLED=.*$" line="NODM_ENABLED=true"
