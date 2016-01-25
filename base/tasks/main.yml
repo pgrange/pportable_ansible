@@ -13,6 +13,7 @@
     - apt-transport-https
     - tree
     - vim
+    - locate
 
 - name: editeur par defaut correct...
   alternatives: name=editor path=/usr/bin/vim.tiny
