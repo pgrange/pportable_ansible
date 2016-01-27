@@ -6,8 +6,9 @@ sed -i -e 's/^deb cdrom:/#deb cdrom:/' /etc/apt/sources.list
 apt-get update
 apt-get upgrade -y
 
-apt-get install ansible
 apt-get install git
+apt-get install python-pip
+pip install ansible
 apt-get autoremove
 
 3. Lancer ansible
