@@ -8,6 +8,8 @@ apt-get upgrade -y
 
 apt-get install git
 apt-get install python-pip
+apt-get install python-dev
+apt-get install python-ecdsa
 pip install ansible
 apt-get autoremove
 
