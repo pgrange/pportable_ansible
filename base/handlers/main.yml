@@ -1,6 +1,9 @@
 - name: restart systemd-logind.service
   service: name=systemd-logind.service state=restarted
 
+- name: restart systemd-journald.service
+  service: name=systemd-journald.service state=restarted
+
 - name: rmmod pcspkr
   command: rmmod pcspkr
   ignore_errors: yes
