@@ -1,6 +1,6 @@
-1. Installer une debian de base avec partition chiffrée
+Installer une debian de base avec partition chiffrée
 
-2. Exécuter ces commandes avant de pouvoir lancer ansible
+Exécuter ces commandes avant de pouvoir lancer ansible
 
 ```bash
 sed -i -e 's/^deb cdrom:/#deb cdrom:/' /etc/apt/sources.list
@@ -15,7 +15,7 @@ pip install ansible
 apt-get autoremove
 ```
 
-3. Lancer ansible
+Lancer ansible
 
 ```bash
 git clone https://github.com/pgrange/pportable_ansible.git
