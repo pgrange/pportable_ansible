@@ -1,0 +1,2 @@
+# Will not use libpam-usb as a second factor tool
+skip-test=CUST-0285

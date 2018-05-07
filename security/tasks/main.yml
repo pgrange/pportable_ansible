@@ -1,2 +1,10 @@
 - name: install lynis
   package: name=lynis
+
+- name: configure lynis
+  copy: src=lynis_custom.prf dest=/etc/lynis/custom.prf
+        owner=root group=root mode=0644
+
+- name: install libpam-tmpdir (lynis recommandation)
+  package: name=libpam-tmpdir
+
